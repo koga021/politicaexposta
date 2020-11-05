@@ -1,0 +1,107 @@
+.grid-template-areas {
+    background-color: #c0ded9;
+    width: 1200px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto ;
+	grid-template-areas:
+        "nav          nav                logo"
+        "breadcrumb breadcrumb         breadcrumb"
+        "sidenav      content            advert"
+        " .           votos               advert"
+        " .     frente-parlamentar      advert"
+        " .      projetos-lei            advert"
+        " .          gastos              advert"
+		" .          footer              footer"
+		;
+}
+
+
+.item {
+	margin: 5px;
+	background:whitesmoke;
+	text-align: center;
+    font-size: 0.9em;
+}
+
+
+
+.grid {
+	display: grid;
+}
+
+.logo {
+	grid-area: logo;
+}
+
+.votos {
+	grid-area: votos;
+}
+.gastos {
+	grid-area: gastos;
+}
+.nav {
+    grid-area: nav;
+    background: #0a466a;
+    color: white;
+    padding: 10px;
+}
+
+.content {
+	grid-area: content;
+}
+
+.sidenav {
+    display: grid;
+    grid-area: sidenav;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.advert {
+	grid-area: advert;
+}
+
+.footer {
+	grid-area: footer;
+}
+
+.imagem{
+    border-radius: 8px;
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+   
+}
+
+.compartilhamento{
+    padding: 5px;
+    margin-left:60px;
+    margin-right:60px;
+    display: inline-grid;
+}
+
+
+.breadcrumb {
+    grid-area: breadcrumb;
+    padding: 0px;
+    padding-left: 5px;
+    margin: 0px;
+    background:#c0ded9;
+    
+}
+.frente-parlamentar {
+    grid-area: frente-parlamentar;
+    
+    
+}
+.projetos-lei {
+    grid-area: projetos-lei;
+    
+    
+}
+body{
+    background:#c0ded9;
+
+}
